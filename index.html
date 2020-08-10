@@ -11,17 +11,44 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.1.1/css/hover-min.css" type="text/css" />
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <style>
-        div#map {
-            min-height: 360px;
-        }
+        .container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+img {
+  max-width: 100%;
+  height:650px;
+  object-fit:cover;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+div#map {
+    min-height: 360px;
+    max-width: 100%;
+}   
     </style>
 </head>
 
 <body>
+
+    <section class="container-fluid">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Camera_pics_141.jpg" alt="Snow" style="width:100%;">
+        <div class="centered">
+            <p style="font-size:50px;">Visit Central Pennsylvania</p>   
+        </div>
+    </section>
+
     <section class="container-fluid">
         <div class="row">
 
-            <div class="col-md-4" style="background-color: peru;padding-top: 50px;padding-bottom: 70px;padding-left: 40px;">
+
+
+            <div class="col-md-4" style="background-color: peru;padding-top: 80px;padding-bottom: 50px;padding-left: 40px;">
                 <form>
                     <label for="name">Name</label><br>
                     <input type="text" name="firstname" id="firstname"/>
@@ -38,8 +65,9 @@
                     <br>
                     <button type="submit" class="btn btn-success">Submit</button>
                 </form>
-            </div>
-            <div>
+                <br>
+                <br>
+                <br>
                 <ul class="list-inline social-links">
                     <li><a target="_blank" href="#"><i class="fa fa-facebook"></i></a></li>
                     <li><a target="_blank" href="#"><i class="fa fa-twitter"></i></a></li>
@@ -53,9 +81,9 @@
 
             
             <div class="col-md-8">
-                <p style="margin-top: 0px;margin-bottom: 0px;text-align: center;font-size: 50px;">Spend Two Days On A Tour Of Blair & Cambria Counties</h1>
-                <h3 style="text-align: center;">Travel on our tour bus to the railroad and historical sites and stay overnight in a luxury hotel</h3>
-                <h3 style="text-align: center;padding: 30px;color: DarkGreen;">To make arrangements contact us by email</h3>
+                <p style="margin-top: 50px;text-align: center;font-size: 70px;font-family: Impact;">Spend Two Days On A Tour Of Blair & Cambria Counties</h1>
+                <h3 style="text-align: center;margin-top; 50px;">Travel On Our Tour Bus To The Railroad And Historical Sites And Stay Overnight In A Luxury Hotel</h3>
+                <h3 style="text-align: center;color: DarkGreen;">To Make Arrangements Contact Us By Email</h3>
             </div>
 
         </div>
@@ -75,7 +103,7 @@
             <div class="col-xs-12 col-sm-12 col-md-8 bg-color-groups section-column">
                 <div class="row">
                     <div class="col-md-12">
-                        <h3 class="section-heading uppercase">Locations</h3>
+                        <h4>Locations</h4>
                     </div>
                 </div>
 
@@ -83,10 +111,10 @@
                     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">Altoona Railroaders Memorial Museum</h4>
+                                <h4>Altoona Railroaders Memorial Museum</h4>
                                 <p>
                                      The only interactive railroaders museum in the United States. Film, museum, lobby show & gift shop.
                                 </p>
@@ -97,10 +125,10 @@
                     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">Allegheny Portage Railroad National Historic Site</h4>
+                                <h4>Allegheny Portage Railroad National Historic Site</h4>
                                 <p>
                                      See historic railroad remains, the Lemon House and the Staple Bend tunnel.    
                                 </p>
@@ -113,10 +141,10 @@
                     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">Horseshoe Curve</h4>
+                                <h4>Horseshoe Curve</h4>
                                 <p>
                                      One of the world's great engineering feats. Ride the funicular or walk 194 landscaped steps up to the train tracks.    
                                 </p>
@@ -127,10 +155,10 @@
                     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">Baker Mansion</h4>
+                                <h4>Baker Mansion</h4>
                                 <p>
                                     Home of legendary Ironmaster Elias Baker and his family. Now the residence of the Blair County Historical Society.    
                                 </p>
@@ -143,10 +171,10 @@
                     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">Fort Roberdeau Historic Site</h4>
+                                <h4>Fort Roberdeau Historic Site</h4>
                                 <p>
                                     A 1778 Colonial Fort residing in Blair County. Tours, exhibits and nature trails. Innovative educational program.
                                 </p>
@@ -157,10 +185,10 @@
                     <div class="col-xs-10 col-xs-offset-1 col-sm-offset-0 col-sm-4 col-md-6">
                         <div class="row">
                             <div class="col-xs-2 col-sm-2  col-md-2">
-                                <i class="three-reasons-icon fa fa-users" aria-hidden="true"></i>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
                             </div>
                             <div class="col-xs-10 col-sm-10">
-                                <h4 class="three-reasons-heading uppercase">Gallitzen Tunnels Park & Museum</h4>
+                                <h4>Gallitzen Tunnels Park & Museum</h4>
                                 <p>
                                     See locomotives emerge from the Allegheny Tunnel and visit a 1942 PRR Caboose.
                                 </p>
